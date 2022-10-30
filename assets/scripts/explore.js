@@ -16,9 +16,8 @@ function init() {
   const synth = window.speechSynthesis;
   let voices = [];
 
-  voices = synth.getVoices();
   synth.addEventListener('voiceschanged', () => {
-    const voices = synth.getVoices();
+    voices = synth.getVoices();
     for (let i = 0; i < voices.length ; i++) {
       const option = document.createElement('option');
       option.textContent = `${voices[i].name} (${voices[i].lang})`;

@@ -1,0 +1,6 @@
+1. By using proper names for IDs and Classes, it makes it easier to reference them in JS and CSS and apply either functionality with JS or colors/appearance stuff with CSS
+2. Data attributes allow for more information to be associated with elements, they can be accessed by using ElementName.dataset.DataName in JS. Data attributes aren't indexed by web crawlers unlike microdata
+3. A DOM fragment is similar to the document except changes made to it don't affect the document. You can create things within the DOM fragment before adding them to the DOM
+4. The virtual DOM seems similar to a DOM fragment in the sense that it doesn't effect the actual DOM although every thing that exists in the DOM exists in the virtual DOM. The virutal DOM is manipulated faster as it doesn't have to draw on the screen
+5. I think this is because of how DOM sets up the various elements but I'm not completely sure.
+6. addEventListener attaches an event handler to a specific element and can have multiple without overwriting the previous ones while onClick is a property of the element and thus can only have one. onClick works with all browsers while addEventListener might not work on older versions
